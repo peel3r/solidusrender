@@ -1,11 +1,11 @@
 databases:
-  - name: solidusdb
-    databaseName: solidus
-    user: solidus
+  - name: mysite
+    databaseName: mysite
+    user: mysite
 
 services:
   - type: web
-    name: solidusWeb
+    name: mysite
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
